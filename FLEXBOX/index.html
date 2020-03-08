@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS FlexBox</title>
+    <style>
+        .container-1 div,
+        .container-2 div,
+        .container-3 div {
+            border: 1px #ccc solid;
+            padding: 10px;
+        }
+
+        .box-1 {
+            flex: 2;
+            order: 2;
+        }
+
+        .box-2 {
+            flex: 1;
+            order: 1;
+        }
+
+        .box-3 {
+            flex: 1;
+            order: 3;
+        }
+
+
+
+        .container-2-box {
+            /* width: 20%; */
+            flex-basis: 27%;
+        }
+
+        .container-3{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .container-3-box{
+            flex-basis: 12%;
+        }
+
+        @media (min-width: 468px) {
+            .container-1 {
+                display: flex;
+                /* align-items: flex-start; */
+                /*  align-items: flex-end; */
+                /* align-items: center; */
+                /* flex-direction: column; */
+            }
+
+            .container-2 {
+                display: flex;
+                /*  justify-content: flex-start; */
+                /* justify-content: flex-end; */
+                /* justify-content: center */
+                justify-content: space-between;
+                /*  justify-content: space-around; */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-1">
+        <div class="box-1">
+            <h3>Box one</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="box-2">
+            <h3>Box two</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="box-3">
+            <h3>Box three</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+    </div>
+
+    <div class="container-2">
+        <div class="container-2-box">
+            <h3>Box four</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="container-2-box">
+            <h3>Box five</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="container-2-box">
+            <h3>Box Six</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+    </div>
+    <div class="container-3">
+        <div class="container-3-box">
+            <h3>Box Seven</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit veniam amet excepturi. Quibusdam dicta debitis repudiandae odit laudantium, sunt cumque hic, nesciunt eum a quae dolores tempora veniam, fugiat sequi?</p>
+        </div>
+        <div class="container-3-box">
+            <h3>Box Eight</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam sit nemo earum temporibus nesciunt excepturi rem dolorem laborum, asperiores delectus impedit est eveniet. Aut, dignissimos quo neque possimus iste reprehenderit!</p>
+        </div>
+        <div class="container-3-box">
+            <h3>Box Nine</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, at! Quo, alias cum fuga quod nam fugiat perferendis ad modi! Iusto repellat ab illo sapiente, quas veritatis facere ratione natus!</p>
+        </div>
+        <div class="container-3-box">
+            <h3>Box Ten</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe nam beatae dolorem ex velit pariatur accusamus fugit facilis accusantium voluptates odit quo quos nesciunt dignissimos ullam ipsa quia, esse dolores!</p>
+        </div>
+        <div class="container-3-box">
+            <h3>Box Eleven</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus perspiciatis perferendis tempore accusantium atque, velit ipsam vel, dolores ipsum, laudantium facilis laborum numquam dolor quo incidunt eos quos optio saepe.</p>
+        </div>
+        <div class="container-3-box">
+            <h3>Box Twelve</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In fugiat ipsam praesentium repellendus facere molestias architecto aspernatur enim ducimus suscipit, doloremque iusto asperiores sint error excepturi repudiandae ad dicta earum.</p>
+        </div>
+    </div>
+</body>
+
+</html>
